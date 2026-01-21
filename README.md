@@ -1,55 +1,78 @@
-# iarroyo-site
+# iarroyo.github.io
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Personal website built with modern Ember.js, showcasing UI/UX leadership and frontend expertise.
+
+## Tech Stack
+
+- **Framework**: [Ember.js](https://emberjs.com/) with Glimmer components (GTS)
+- **Build**: [Vite](https://vite.dev) + [Embroider](https://github.com/embroider-build/embroider)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (utility-first)
+- **UI Components**: [ember-shadcn](https://shadcn-ember.com/) (Card, Badge, Separator, Button)
+- **Language**: TypeScript
+
+## Modern Ember Patterns
+
+This project demonstrates modern Ember.js development:
+
+- **GTS (Glimmer Template Syntax)** - Co-located templates with TypeScript
+- **Template-only components** - Lightweight, functional components
+- **Angle-bracket invocation** - Modern component syntax
+- **No classic components** - Pure Glimmer components
+- **No lifecycle hooks** - Declarative, reactive patterns
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
-
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/)
-- [pnpm](https://pnpm.io/)
-- [Google Chrome](https://google.com/chrome/)
+- [Node.js](https://nodejs.org/) (v18+)
+- npm or [pnpm](https://pnpm.io/)
 
 ## Installation
 
-- `git clone <repository-url>` this repository
-- `cd iarroyo-site`
-- `pnpm install`
+```bash
+git clone https://github.com/iarroyo/iarroyo.github.io.git
+cd iarroyo.github.io
+npm install
+```
 
-## Running / Development
+## Development
 
-- `pnpm start`
-- Visit your app at [http://localhost:4200](http://localhost:4200).
-- Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+```bash
+npm start
+```
 
-### Code Generators
+Visit [http://localhost:4200](http://localhost:4200)
 
-Make use of the many generators for code, try `pnpm ember help generate` for more details
+## Build
 
-### Running Tests
+```bash
+npm run build
+```
 
-- `pnpm test`
+Output is generated in the `dist/` directory.
 
-### Linting
+## Project Structure
 
-- `pnpm lint`
-- `pnpm lint:fix`
+```
+app/
+  components/
+    hello-world.gts    # Main landing component
+    ui/                # ember-shadcn components
+      badge.gts
+      button.gts
+      card.gts
+      separator.gts
+  lib/
+    utils.ts           # Tailwind class utilities (cn)
+  styles/
+    app.css            # Tailwind config + design tokens
+  templates/
+    application.gts    # Root template
+```
 
-### Building
+## Design System
 
-- `pnpm vite build --mode development` (development)
-- `pnpm build` (production)
+Uses ember-shadcn with the "new-york" style variant. CSS variables provide light/dark mode theming with oklch color space for consistent, accessible colors.
 
-### Deploying
+## License
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-- [ember.js](https://emberjs.com/)
-- [Vite](https://vite.dev)
-- Development Browser Extensions
-  - [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  - [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+MIT
