@@ -1,12 +1,10 @@
 import { pageTitle } from 'ember-page-title';
-import { WelcomePage } from 'ember-welcome-page';
+import HelloWorld from 'iarroyo-site/components/hello-world';
 
 <template>
-  {{pageTitle "IarroyoSite"}}
+  {{pageTitle "Ismael Arroyo - UI/UX Manager"}}
+
+  <HelloWorld />
 
   {{outlet}}
-
-  {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage />
-  {{! Feel free to remove this! }}
 </template>

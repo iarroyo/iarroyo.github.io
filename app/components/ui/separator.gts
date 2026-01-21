@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 
-import { cn } from 'iarroyo-site/app/lib/utils';
+import { cn } from 'iarroyo-site/lib/utils';
 
 type Orientation = 'horizontal' | 'vertical';
 

@@ -1,4 +1,4 @@
-import { cn } from 'iarroyo-site/app/lib/utils';
+import { cn } from 'iarroyo-site/lib/utils';
 
 import type { TOC } from '@ember/component/template-only';
 
