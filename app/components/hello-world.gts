@@ -30,9 +30,10 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
         <section aria-labelledby="about-heading">
           <h2 id="about-heading" class="sr-only">About me</h2>
           <p class="text-muted-foreground leading-relaxed">
-            I lead UI/UX teams with a strong technical foundation in frontend architecture,
-            accessibility, and design systems. My work centers on building scalable,
-            maintainable interfaces that serve both users and developers.
+            I lead UI/UX teams with a strong technical foundation in frontend
+            architecture, accessibility, and design systems. My work centers on
+            building scalable, maintainable interfaces that serve both users and
+            developers.
           </p>
         </section>
 
@@ -51,8 +52,8 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             <Badge @variant="outline">Design Systems</Badge>
           </div>
           <p class="text-sm text-muted-foreground mt-3">
-            Cross-framework perspective, not framework hopping. Each tool teaches
-            something valuable about building great interfaces.
+            Cross-framework perspective, not framework hopping. Each tool
+            teaches something valuable about building great interfaces.
           </p>
         </section>
 
@@ -64,7 +65,8 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
           </h2>
           <p class="text-muted-foreground">
             Dad of two twins. They've taught me more about patience, iteration,
-            and the importance of a good night's sleep than any sprint retrospective.
+            and the importance of a good night's sleep than any sprint
+            retrospective.
           </p>
         </section>
       </CardContent>
