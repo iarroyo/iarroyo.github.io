@@ -19,7 +19,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
     <Card class="w-full max-w-2xl">
       <CardHeader>
         <CardTitle class="text-2xl sm:text-3xl">
-          <h1>Hello, I'm Ismael</h1>
+          <h1>Hello, I'm Ivan</h1>
         </CardTitle>
         <CardDescription class="text-base">
           UI/UX Manager with a deep focus on Ember.js
