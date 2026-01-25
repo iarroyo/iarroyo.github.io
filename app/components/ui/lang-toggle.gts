@@ -32,7 +32,7 @@ export default class LangToggle extends Component<LangToggleSignature> {
     <button
       type="button"
       {{on "click" this.toggle}}
-      class="px-2 py-1 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+      class="px-2 py-1 rounded-lg text-sm font-medium text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
       aria-label={{t "profile.aria.language_toggle"}}
       title="Switch to {{this.nextLang}}"
       ...attributes

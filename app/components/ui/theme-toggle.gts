@@ -19,7 +19,7 @@ export default class ThemeToggle extends Component<ThemeToggleSignature> {
     <button
       type="button"
       {{on "click" this.toggle}}
-      class="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+      class="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
       aria-label={{t "profile.aria.theme_toggle"}}
       ...attributes
     >
