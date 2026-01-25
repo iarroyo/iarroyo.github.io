@@ -6,7 +6,7 @@ profile:
   sections:
     technologies:
       title: 'Technologies & Mindset'
-      description: "Cross-framework perspective, not framework hopping. While accessibility and design systems aren't my strongest skills, I constantly strive to stay up to date on best practices."
+      description: "Experience across multiple frameworks, emphasizing fundamentals over trends. While accessibility and design systems aren't my strongest skills, I constantly strive to stay up to date on best practices."
     ai:
       title: 'AI & Tooling'
       description: 'In my spare time, I use AI tools extensively for personal projects—from configuring Claude terminal with agents, skills, and memory to speed up development workflows. That said, AI comes with responsibility: I always review outputs and ensure they meet expected standards.'
