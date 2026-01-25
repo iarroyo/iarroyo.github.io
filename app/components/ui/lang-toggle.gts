@@ -1,6 +1,7 @@
 import Component from '@glimmer/component';
 import { service } from '@ember/service';
 import { on } from '@ember/modifier';
+import { action } from '@ember/object';
 import { t } from 'ember-intl';
 import type IntlService from 'ember-intl/services/intl';
 
@@ -11,15 +12,20 @@ interface LangToggleSignature {
 export default class LangToggle extends Component<LangToggleSignature> {
   @service declare intl: IntlService;
 
-  toggle = () => {
+  get currentLang() {
+    return this.intl.primaryLocale?.toUpperCase() ?? 'EN';
+  }
+
+  get nextLang() {
+    return this.intl.primaryLocale === 'en' ? 'ES' : 'EN';
+  }
+
+  @action
+  toggle() {
     const currentLocale = this.intl.primaryLocale;
     const newLocale = currentLocale === 'en' ? 'es' : 'en';
     this.intl.setLocale([newLocale]);
     localStorage.setItem('locale', newLocale);
-  };
-
-  get currentLang() {
-    return this.intl.primaryLocale?.toUpperCase() ?? 'EN';
   }
 
   <template>
@@ -28,6 +34,7 @@ export default class LangToggle extends Component<LangToggleSignature> {
       {{on "click" this.toggle}}
       class="px-2 py-1 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
       aria-label={{t "profile.aria.language_toggle"}}
+      title="Switch to {{this.nextLang}}"
       ...attributes
     >
       {{this.currentLang}}

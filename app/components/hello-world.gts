@@ -20,33 +20,29 @@ interface HelloWorldSignature {
 const HelloWorld: TOC<HelloWorldSignature> = <template>
   <main class="min-h-screen flex items-center justify-center p-4 sm:p-8">
     <Card class="w-full max-w-2xl shadow-xl shadow-primary/5 border-border/50">
-      <CardHeader
-        class="relative flex flex-col sm:flex-row items-center gap-5 pb-2"
-      >
+      <CardHeader class="relative">
         <div class="absolute top-0 right-0 flex items-center gap-1">
           <LangToggle />
           <ThemeToggle />
         </div>
-        <div class="relative">
-          <div
-            class="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/40 to-accent/20 blur-sm"
-          ></div>
+        <div class="flex items-center gap-4">
           <img
             src="https://avatars.githubusercontent.com/u/490540?v=4"
             alt="Ivan Arroyo"
-            class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full ring-4 ring-background shadow-lg"
+            class="w-16 h-16 rounded-full border-2 border-border"
           />
-        </div>
-        <div class="text-center sm:text-left">
-          <CardTitle class="text-2xl sm:text-3xl font-bold">
-            <h1>{{t "profile.greeting"}}</h1>
-          </CardTitle>
-          <CardDescription class="text-base mt-1">
-            <span class="text-primary font-medium">{{t "profile.title"}}</span>
-            <span class="text-muted-foreground">
+          <div>
+            <CardTitle>
+              <h1 class="text-xl font-semibold tracking-tight">
+                {{t "profile.greeting"}}
+              </h1>
+            </CardTitle>
+            <CardDescription class="mt-0.5">
+              {{t "profile.title"}}
+              <span class="text-muted-foreground/70"> · </span>
               {{t "profile.subtitle"}}
-            </span>
-          </CardDescription>
+            </CardDescription>
+          </div>
         </div>
       </CardHeader>
 
