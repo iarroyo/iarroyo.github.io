@@ -2,7 +2,7 @@ profile:
   greeting: "Hello, I'm Ivan"
   title: 'UI/UX Manager'
   subtitle: 'with a deep focus on Ember.js'
-  about: 'I lead UI/UX teams with a strong technical foundation in frontend architecture. I care deeply about people—mentoring, sharing knowledge, and promoting environments where good practices thrive. My work centers on building scalable, maintainable interfaces that serve both users and developers.'
+  about: 'I lead UI/UX teams with a strong technical foundation in frontend architecture. I like to work with people, mentoring, sharing knowledge, and promoting environments where good practices thrive. My work centers on building scalable, maintainable interfaces that serve both users and developers.'
   sections:
     technologies:
       title: 'Technologies & Mindset'

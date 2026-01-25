@@ -2,7 +2,7 @@ profile:
   greeting: 'Hola, soy Iván'
   title: 'UI/UX Manager'
   subtitle: 'con un enfoque profundo en Ember.js'
-  about: 'Lidero equipos de UI/UX con una sólida base técnica en arquitectura frontend. Me importan profundamente las personas—la mentoría, compartir conocimiento y promover entornos donde las buenas prácticas florezcan. Mi trabajo se centra en construir interfaces escalables y mantenibles que sirvan tanto a usuarios como a desarrolladores.'
+  about: 'Lidero equipos de UI/UX con una sólida base técnica en arquitectura frontend. Me gusta trabajar con personas, mentorizando, compartiendo conocimiento y promoviendo entornos donde las buenas prácticas florezcan. Mi trabajo se centra en construir interfaces escalables y mantenibles que sirvan tanto a usuarios como a desarrolladores.'
   sections:
     technologies:
       title: 'Tecnologías y Mentalidad'
