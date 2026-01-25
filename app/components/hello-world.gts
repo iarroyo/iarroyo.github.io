@@ -37,7 +37,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
                 {{t "profile.greeting"}}
               </h1>
             </CardTitle>
-            <CardDescription class="mt-0.5">
+            <CardDescription class="mt-0.5 min-h-[2.5rem]">
               {{t "profile.title"}}
               <span class="text-muted-foreground/70"> · </span>
               {{t "profile.subtitle"}}
@@ -49,7 +49,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
       <CardContent class="space-y-6">
         <section aria-labelledby="about-heading">
           <h2 id="about-heading" class="sr-only">About me</h2>
-          <p class="text-muted-foreground leading-relaxed">
+          <p class="text-muted-foreground leading-relaxed min-h-[4.5rem]">
             {{t "profile.about"}}
           </p>
         </section>
