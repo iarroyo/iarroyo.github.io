@@ -1,0 +1,29 @@
+profile:
+  greeting: 'Hola, soy Iván'
+  title: 'UI/UX Manager'
+  subtitle: 'con un enfoque profundo en Ember.js'
+  about: 'Lidero equipos de UI/UX con una sólida base técnica en arquitectura frontend. Me importan profundamente las personas—la mentoría, compartir conocimiento y promover entornos donde las buenas prácticas florezcan. Mi trabajo se centra en construir interfaces escalables y mantenibles que sirvan tanto a usuarios como a desarrolladores.'
+  sections:
+    technologies:
+      title: 'Tecnologías y Mentalidad'
+      description: 'Perspectiva cross-framework, no saltar de framework en framework. Aunque la accesibilidad y los sistemas de diseño no son mis puntos más fuertes, me esfuerzo constantemente por mantenerme actualizado en buenas prácticas.'
+    ai:
+      title: 'IA y Herramientas'
+      description: 'En mi tiempo libre, uso herramientas de IA extensivamente para proyectos personales—desde configurar Claude terminal con agentes, skills y memoria para acelerar flujos de trabajo. Dicho esto, la IA conlleva responsabilidad: siempre reviso los resultados y me aseguro de que cumplan los estándares esperados.'
+    personal:
+      title: 'Más allá del código'
+      description: 'Padre de dos gemelos. Me han enseñado más sobre paciencia, iteración y la importancia de una buena noche de sueño que cualquier retrospectiva de sprint.'
+  footer:
+    built_with: 'Hecho con Ember.js, Tailwind CSS y shadcn'
+  badges:
+    ember: 'Ember.js'
+    next: 'Next.js'
+    vue: 'Vue'
+    svelte: 'Svelte'
+    accessibility: 'Accesibilidad'
+    design_systems: 'Sistemas de Diseño'
+  aria:
+    github: 'Perfil de GitHub'
+    linkedin: 'Perfil de LinkedIn'
+    theme_toggle: 'Cambiar tema'
+    language_toggle: 'Cambiar idioma'

@@ -1,4 +1,5 @@
 import type { TOC } from '@ember/component/template-only';
+import { t } from 'ember-intl';
 import {
   Card,
   CardHeader,
@@ -9,6 +10,8 @@ import {
 } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
+import ThemeToggle from './ui/theme-toggle';
+import LangToggle from './ui/lang-toggle';
 
 interface HelloWorldSignature {
   Element: HTMLElement;
@@ -17,7 +20,13 @@ interface HelloWorldSignature {
 const HelloWorld: TOC<HelloWorldSignature> = <template>
   <main class="min-h-screen flex items-center justify-center p-4 sm:p-8">
     <Card class="w-full max-w-2xl shadow-xl shadow-primary/5 border-border/50">
-      <CardHeader class="flex flex-col sm:flex-row items-center gap-5 pb-2">
+      <CardHeader
+        class="relative flex flex-col sm:flex-row items-center gap-5 pb-2"
+      >
+        <div class="absolute top-0 right-0 flex items-center gap-1">
+          <LangToggle />
+          <ThemeToggle />
+        </div>
         <div class="relative">
           <div
             class="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/40 to-accent/20 blur-sm"
@@ -30,12 +39,12 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
         </div>
         <div class="text-center sm:text-left">
           <CardTitle class="text-2xl sm:text-3xl font-bold">
-            <h1>Hello, I'm Ivan</h1>
+            <h1>{{t "profile.greeting"}}</h1>
           </CardTitle>
           <CardDescription class="text-base mt-1">
-            <span class="text-primary font-medium">UI/UX Manager</span>
+            <span class="text-primary font-medium">{{t "profile.title"}}</span>
             <span class="text-muted-foreground">
-              with a deep focus on Ember.js
+              {{t "profile.subtitle"}}
             </span>
           </CardDescription>
         </div>
@@ -45,11 +54,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
         <section aria-labelledby="about-heading">
           <h2 id="about-heading" class="sr-only">About me</h2>
           <p class="text-muted-foreground leading-relaxed">
-            I lead UI/UX teams with a strong technical foundation in frontend
-            architecture. I care deeply about people—mentoring, sharing
-            knowledge, and promoting environments where good practices thrive.
-            My work centers on building scalable, maintainable interfaces that
-            serve both users and developers.
+            {{t "profile.about"}}
           </p>
         </section>
 
@@ -64,20 +69,22 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
               class="w-1.5 h-1.5 rounded-full bg-primary"
               aria-hidden="true"
             ></span>
-            Technologies &amp; Mindset
+            {{t "profile.sections.technologies.title"}}
           </h2>
           <div class="flex flex-wrap gap-2">
-            <Badge>Ember.js</Badge>
-            <Badge @variant="secondary">Next.js</Badge>
-            <Badge @variant="secondary">Vue</Badge>
-            <Badge @variant="secondary">Svelte</Badge>
-            <Badge @variant="outline">Accessibility</Badge>
-            <Badge @variant="outline">Design Systems</Badge>
+            <Badge>{{t "profile.badges.ember"}}</Badge>
+            <Badge @variant="secondary">{{t "profile.badges.next"}}</Badge>
+            <Badge @variant="secondary">{{t "profile.badges.vue"}}</Badge>
+            <Badge @variant="secondary">{{t "profile.badges.svelte"}}</Badge>
+            <Badge @variant="outline">{{t
+                "profile.badges.accessibility"
+              }}</Badge>
+            <Badge @variant="outline">{{t
+                "profile.badges.design_systems"
+              }}</Badge>
           </div>
           <p class="text-sm text-muted-foreground mt-3">
-            Cross-framework perspective, not framework hopping. While
-            accessibility and design systems aren't my strongest skills, I
-            constantly strive to stay up to date on best practices.
+            {{t "profile.sections.technologies.description"}}
           </p>
         </section>
 
@@ -92,14 +99,10 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
               class="w-1.5 h-1.5 rounded-full bg-primary"
               aria-hidden="true"
             ></span>
-            AI &amp; Tooling
+            {{t "profile.sections.ai.title"}}
           </h2>
           <p class="text-muted-foreground">
-            In my spare time, I use AI tools extensively for personal
-            projects—from configuring Claude terminal with agents, skills, and
-            memory to speed up development workflows. That said, AI comes with
-            responsibility: I always review outputs and ensure they meet
-            expected standards.
+            {{t "profile.sections.ai.description"}}
           </p>
         </section>
 
@@ -114,12 +117,10 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
               class="w-1.5 h-1.5 rounded-full bg-primary"
               aria-hidden="true"
             ></span>
-            Beyond the code
+            {{t "profile.sections.personal.title"}}
           </h2>
           <p class="text-muted-foreground">
-            Dad of two twins. They've taught me more about patience, iteration,
-            and the importance of a good night's sleep than any sprint
-            retrospective.
+            {{t "profile.sections.personal.description"}}
           </p>
         </section>
       </CardContent>
@@ -133,7 +134,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             target="_blank"
             rel="noopener noreferrer"
             class="text-muted-foreground hover:text-primary transition-colors"
-            aria-label="GitHub Profile"
+            aria-label={{t "profile.aria.github"}}
           >
             <svg
               class="w-5 h-5"
@@ -153,7 +154,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             target="_blank"
             rel="noopener noreferrer"
             class="text-muted-foreground hover:text-primary transition-colors"
-            aria-label="LinkedIn Profile"
+            aria-label={{t "profile.aria.linkedin"}}
           >
             <svg
               class="w-5 h-5"
@@ -168,7 +169,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
           </a>
         </div>
         <p class="text-sm text-muted-foreground">
-          Built with Ember.js, Tailwind CSS &amp; shadcn
+          {{t "profile.footer.built_with"}}
         </p>
       </CardFooter>
     </Card>
