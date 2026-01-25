@@ -149,7 +149,7 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/iarroyo"
+            href="https://linkedin.com/in/iván-arroyo-escobar-2168383a"
             target="_blank"
             rel="noopener noreferrer"
             class="text-muted-foreground hover:text-primary transition-colors"
