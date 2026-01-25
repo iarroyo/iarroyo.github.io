@@ -17,13 +17,20 @@ interface HelloWorldSignature {
 const HelloWorld: TOC<HelloWorldSignature> = <template>
   <main class="min-h-screen flex items-center justify-center p-4 sm:p-8">
     <Card class="w-full max-w-2xl">
-      <CardHeader>
-        <CardTitle class="text-2xl sm:text-3xl">
-          <h1>Hello, I'm Ivan</h1>
-        </CardTitle>
-        <CardDescription class="text-base">
-          UI/UX Manager with a deep focus on Ember.js
-        </CardDescription>
+      <CardHeader class="flex flex-row items-center gap-4">
+        <img
+          src="https://avatars.githubusercontent.com/u/490540?v=4"
+          alt="Ivan Arroyo"
+          class="w-16 h-16 sm:w-20 sm:h-20 rounded-full"
+        />
+        <div>
+          <CardTitle class="text-2xl sm:text-3xl">
+            <h1>Hello, I'm Ivan</h1>
+          </CardTitle>
+          <CardDescription class="text-base">
+            UI/UX Manager with a deep focus on Ember.js
+          </CardDescription>
+        </div>
       </CardHeader>
 
       <CardContent class="space-y-6">
