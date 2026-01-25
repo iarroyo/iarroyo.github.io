@@ -68,14 +68,14 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             {{t "profile.sections.technologies.title"}}
           </h2>
           <div class="flex flex-wrap gap-2">
-            <Badge>{{t "profile.badges.ember"}}</Badge>
-            <Badge @variant="secondary">{{t "profile.badges.next"}}</Badge>
-            <Badge @variant="secondary">{{t "profile.badges.vue"}}</Badge>
-            <Badge @variant="secondary">{{t "profile.badges.svelte"}}</Badge>
-            <Badge @variant="outline">{{t
+            <Badge @variant="outline">{{t "profile.badges.ember"}}</Badge>
+            <Badge @variant="outline">{{t "profile.badges.next"}}</Badge>
+            <Badge @variant="outline">{{t "profile.badges.vue"}}</Badge>
+            <Badge @variant="outline">{{t "profile.badges.svelte"}}</Badge>
+            <Badge @variant="secondary">{{t
                 "profile.badges.accessibility"
               }}</Badge>
-            <Badge @variant="outline">{{t
+            <Badge @variant="secondary">{{t
                 "profile.badges.design_systems"
               }}</Badge>
           </div>
