@@ -5,7 +5,6 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-  CardAction,
   CardContent,
   CardFooter,
 } from './ui/card';
@@ -21,7 +20,11 @@ interface HelloWorldSignature {
 const HelloWorld: TOC<HelloWorldSignature> = <template>
   <main class="min-h-screen flex items-center justify-center p-4 sm:p-8">
     <Card class="w-full max-w-2xl shadow-xl shadow-primary/5 border-border/50">
-      <CardHeader>
+      <CardHeader class="relative">
+        <div class="absolute top-0 right-0 flex items-center gap-1">
+          <LangToggle />
+          <ThemeToggle />
+        </div>
         <div class="flex items-center gap-4">
           <img
             src="https://avatars.githubusercontent.com/u/490540?v=4"
@@ -41,10 +44,6 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             </CardDescription>
           </div>
         </div>
-        <CardAction class="flex items-center gap-1">
-          <LangToggle />
-          <ThemeToggle />
-        </CardAction>
       </CardHeader>
 
       <CardContent class="space-y-6">

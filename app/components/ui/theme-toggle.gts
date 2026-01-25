@@ -19,14 +19,14 @@ export default class ThemeToggle extends Component<ThemeToggleSignature> {
     <button
       type="button"
       {{on "click" this.toggle}}
-      class="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+      class="p-2 rounded-lg hover:bg-muted transition-colors"
       aria-label={{t "profile.aria.theme_toggle"}}
       ...attributes
     >
       {{#if this.isDark}}
         {{! Sun icon }}
         <svg
-          class="w-5 h-5"
+          class="w-5 h-5 text-amber-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ export default class ThemeToggle extends Component<ThemeToggleSignature> {
       {{else}}
         {{! Moon icon }}
         <svg
-          class="w-5 h-5"
+          class="w-5 h-5 text-indigo-400"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
