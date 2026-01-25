@@ -31,9 +31,10 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
           <h2 id="about-heading" class="sr-only">About me</h2>
           <p class="text-muted-foreground leading-relaxed">
             I lead UI/UX teams with a strong technical foundation in frontend
-            architecture, accessibility, and design systems. My work centers on
-            building scalable, maintainable interfaces that serve both users and
-            developers.
+            architecture. I care deeply about people—mentoring, sharing
+            knowledge, and promoting environments where good practices thrive.
+            My work centers on building scalable, maintainable interfaces that
+            serve both users and developers.
           </p>
         </section>
 
@@ -52,8 +53,24 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             <Badge @variant="outline">Design Systems</Badge>
           </div>
           <p class="text-sm text-muted-foreground mt-3">
-            Cross-framework perspective, not framework hopping. Each tool
-            teaches something valuable about building great interfaces.
+            Cross-framework perspective, not framework hopping. While
+            accessibility and design systems aren't my strongest skills, I
+            constantly strive to stay up to date on best practices.
+          </p>
+        </section>
+
+        <Separator />
+
+        <section aria-labelledby="ai-heading">
+          <h2 id="ai-heading" class="text-sm font-medium mb-2">
+            AI & Tooling
+          </h2>
+          <p class="text-muted-foreground">
+            In my spare time, I use AI tools extensively for personal
+            projects—from configuring Claude terminal with agents, skills, and
+            memory to speed up development workflows. That said, AI comes with
+            responsibility: I always review outputs and ensure they meet
+            expected standards.
           </p>
         </section>
 
