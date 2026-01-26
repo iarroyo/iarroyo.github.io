@@ -68,7 +68,9 @@ const HelloWorld: TOC<HelloWorldSignature> = <template>
             {{t "profile.sections.technologies.title"}}
           </h2>
           <div class="flex flex-wrap gap-2">
-            <Badge @variant="outline">{{t "profile.badges.ember"}}</Badge>
+            <Badge
+              @class="border-red-400 text-red-600 dark:border-red-500 dark:text-red-400"
+            >{{t "profile.badges.ember"}}</Badge>
             <Badge @variant="outline">{{t "profile.badges.next"}}</Badge>
             <Badge @variant="outline">{{t "profile.badges.vue"}}</Badge>
             <Badge @variant="outline">{{t "profile.badges.svelte"}}</Badge>
